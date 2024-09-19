@@ -1,4 +1,4 @@
-import mongoose, { Mongoose } from 'mongoose';
+import mongoose, { IfUnknown, Mongoose } from 'mongoose';
 
 
 const MONGODB_URL = process.env.MONGODB_URL;
@@ -8,10 +8,10 @@ interface MongooseConnection {
   promise: Promise<Mongoose> | null;
 }
 
-let cached: MongooseConnection = (global as never).mongoose
+let cached: MongooseConnection = (global as unknown).mongoose
 
 if(!cached) {
-  cached = (global as never).mongoose = { 
+  cached = (global as unknown).mongoose = { 
     conn: null, promise: null 
   }
 }
