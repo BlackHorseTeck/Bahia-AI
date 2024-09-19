@@ -1,4 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import mongoose, { Mongoose } from 'mongoose';
+
 
 const MONGODB_URL = process.env.MONGODB_URL;
 
@@ -23,7 +25,7 @@ export const connectToDatabase = async () => {
   cached.promise = 
     cached.promise || 
     mongoose.connect(MONGODB_URL, { 
-      dbName: 'imaginify', bufferCommands: false 
+      dbName: 'bahia', bufferCommands: false 
     })
 
   cached.conn = await cached.promise;

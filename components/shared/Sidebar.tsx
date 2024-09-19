@@ -15,7 +15,7 @@ const Sidebar = () => {
      <div className="flex size-full flex-col gap-4">
       <Link href='/'className="sidebar-logo">
       <Image src="/assets/images/logo-text.svg" alt="logo" width={180} height={28} />
-      </Link> 
+      </Link>
       <nav className='sidebar-nav'>
         <SignedIn>
           <ul className='sidebar-nav_elements'>
@@ -27,7 +27,7 @@ const Sidebar = () => {
                   isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
                 }`}>
                   <Link className="sidebar-link" href={link.route}>
-                      <Image 
+                      <Image
                         src={link.icon}
                         alt="logo"
                         width={24}
@@ -38,7 +38,7 @@ const Sidebar = () => {
                     </Link>
                 </li>
               )
-            } 
+            }
             )}
             </ul>
 
@@ -53,7 +53,7 @@ const Sidebar = () => {
                   isActive ? 'bg-purple-gradient text-white' : 'text-gray-700'
                 }`}>
                   <Link className="sidebar-link" href={link.route}>
-                      <Image 
+                      <Image
                         src={link.icon}
                         alt="logo"
                         width={24}
@@ -64,7 +64,7 @@ const Sidebar = () => {
                     </Link>
                 </li>
               )
-            } 
+            }
             )}
             <li className='flex-center cursor-pointer gap-2 p-4'>
               <UserButton afterSignOutUrl='/' showName />
@@ -77,7 +77,7 @@ const Sidebar = () => {
             </Button>
           </SignedOut>
         </nav>
-     </div>   
+     </div>
     </aside>
   )
 }

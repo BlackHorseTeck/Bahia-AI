@@ -10,8 +10,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className="wrapper">
             {children}
         </div>
-        </div>   
-     {children}      
+        </div>
+     {children}
     </main>
   )
 }
