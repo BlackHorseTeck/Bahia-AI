@@ -1,5 +1,4 @@
-import mongoose, { IfUnknown, Mongoose } from 'mongoose';
-
+import mongoose, { Mongoose } from 'mongoose';
 
 const MONGODB_URL = process.env.MONGODB_URL;
 
@@ -8,26 +7,28 @@ interface MongooseConnection {
   promise: Promise<Mongoose> | null;
 }
 
-let cached: MongooseConnection = (global as unknown).mongoose
-
-if(!cached) {
-  cached = (global as unknown).mongoose = { 
-    conn: null, promise: null 
-  }
+interface NodeJSGlobal {
+  mongoose?: MongooseConnection;
 }
 
-export const connectToDatabase = async () => {
-  if(cached.conn) return cached.conn;
+const cached: MongooseConnection = (global as NodeJSGlobal).mongoose || { conn: null, promise: null };
 
-  if(!MONGODB_URL) throw new Error('Missing MONGODB_URL');
+export const connectToDatabase = async (): Promise<Mongoose> => {
 
-  cached.promise = 
-    cached.promise || 
-    mongoose.connect(MONGODB_URL, { 
-      dbName: 'bahia', bufferCommands: false 
-    })
+  if (cached.conn) return cached.conn;
+
+  if (!MONGODB_URL) {
+    throw new Error('Missing MONGODB_URL');
+  }
+
+  cached.promise = cached.promise || mongoose.connect(MONGODB_URL, {
+    dbName: 'imaginify',
+    bufferCommands: false,
+  });
 
   cached.conn = await cached.promise;
 
+  (global as NodeJSGlobal).mongoose = cached;
+
   return cached.conn;
-}
+};
