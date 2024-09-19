@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import mongoose, { Mongoose } from 'mongoose';
 
 
@@ -9,10 +8,10 @@ interface MongooseConnection {
   promise: Promise<Mongoose> | null;
 }
 
-let cached: MongooseConnection = (global as any).mongoose
+let cached: MongooseConnection = (global as never).mongoose
 
 if(!cached) {
-  cached = (global as any).mongoose = { 
+  cached = (global as never).mongoose = { 
     conn: null, promise: null 
   }
 }
