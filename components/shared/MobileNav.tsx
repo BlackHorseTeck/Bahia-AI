@@ -13,7 +13,7 @@ const MobileNav = () => {
   return (
     <header className="header">
       <Link href="/" className="flex items-center gap-2 md:py-2">
-      <Image
+      <Image 
        src="/assets/images/logo-text.svg"
        alt="logo"
        width={180}
@@ -48,7 +48,7 @@ const MobileNav = () => {
               const isActive = link.route === pathname
 
               return (
-                <li
+                <li 
                 className={`${isActive && 'gradient-text'} p-18 flex whitespace-nowrap text-dark-700`}
                 key={link.route}
                 >
@@ -63,7 +63,7 @@ const MobileNav = () => {
                     </Link>
                 </li>
               )
-            }
+            } 
             )}
             </ul>
     </>
