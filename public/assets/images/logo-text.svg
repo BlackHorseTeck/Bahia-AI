@@ -26,11 +26,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="4.1666667"
-     inkscape:cx="105.24"
-     inkscape:cy="23.28"
-     inkscape:window-width="1419"
-     inkscape:window-height="1032"
-     inkscape:window-x="485"
+     inkscape:cx="94.319999"
+     inkscape:cy="23.04"
+     inkscape:window-width="958"
+     inkscape:window-height="1000"
+     inkscape:window-x="953"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg52" />
@@ -124,7 +124,7 @@
        inkscape:collect="always">
       <stop
          style="stop-color:#7263ed;stop-opacity:1;"
-         offset="0.89673543"
+         offset="0.0001"
          id="stop63" />
       <stop
          style="stop-color:#7263ed;stop-opacity:0;"
@@ -697,33 +697,33 @@
        id="linearGradient54"
        x1="175.74541"
        y1="37.579174"
-       x2="105.27647"
-       y2="-10.044523"
+       x2="114.835"
+       y2="-10.519651"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.0683939,0,0,1.0683939,-7.770311,0.0540964)" />
+       gradientTransform="matrix(1.1684275,0,0,1.1684276,-9.0189847,-2.4588016)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient63"
        id="linearGradient64"
        x1="31.808868"
        y1="55.812"
-       x2="159.61853"
-       y2="-46.19083"
+       x2="138.37735"
+       y2="-26.235434"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.0683939,0,0,1.0683939,-7.770311,0.0540964)" />
+       gradientTransform="matrix(1.1684275,0,0,1.1684276,-9.0189847,-2.4588016)" />
   </defs>
   <text
      xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.2831px;font-family:'Tw Cen MT Condensed Extra Bold';-inkscape-font-specification:'Tw Cen MT Condensed Extra Bold, ';fill:url(#linearGradient54);fill-opacity:1;stroke:url(#linearGradient64);stroke-width:1.05347;stroke-opacity:1"
-     x="29.614826"
-     y="23.188158"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.6504px;line-height:0;font-family:'Tw Cen MT Condensed Extra Bold';-inkscape-font-specification:'Tw Cen MT Condensed Extra Bold, ';fill:url(#linearGradient54);fill-opacity:1;stroke:url(#linearGradient64);stroke-width:1.15211;stroke-opacity:1"
+     x="31.86652"
+     y="22.841301"
      id="text52"
-     transform="scale(1.0575508,0.94558105)"
-     inkscape:transform-center-x="28.849957"
-     inkscape:transform-center-y="-21.382909"><tspan
+     transform="scale(1.0331411,0.96792201)"
+     inkscape:transform-center-x="30.822839"
+     inkscape:transform-center-y="-23.937513"><tspan
        sodipodi:role="line"
        id="tspan52"
-       x="29.614826"
-       y="23.188158"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.2831px;font-family:'Arial Rounded MT Bold';-inkscape-font-specification:'Arial Rounded MT Bold, ';fill:url(#linearGradient54);fill-opacity:1;stroke:url(#linearGradient64);stroke-width:1.05347;stroke-opacity:1">BAHIA AI</tspan></text>
+       x="31.86652"
+       y="22.841301"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:27.6504px;line-height:0;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';fill:url(#linearGradient54);fill-opacity:1;stroke:url(#linearGradient64);stroke-width:1.15211;stroke-opacity:1">BAHIA AI</tspan></text>
 </svg>
